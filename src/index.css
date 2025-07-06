@@ -1,1 +1,14 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+
+/* Apply global font */
+html {
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  background-color: #2f2f2f;
+  color: white;
+}
