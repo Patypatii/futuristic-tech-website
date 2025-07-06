@@ -18,7 +18,7 @@ A **pixel-perfect**, modern, and animated landing page built with **React**, **T
 
 ### 📸 Preview
 
-![screenshot](./src/assets/futuristic-bg.png)
+![screenshot](./src/assets/Futurisitic-landing-page.png)
 
 ---
 
