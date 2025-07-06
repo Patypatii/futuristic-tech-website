@@ -1,12 +1,66 @@
-# React + Vite
+# 🚀 Futuristic Landing Page – 3DPIXELS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **pixel-perfect**, modern, and animated landing page built with **React**, **Tailwind CSS v4**, and **Framer Motion**. Inspired by futuristic tech design — this page delivers an immersive visual experience with smooth animations and bold typography.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ✨ Features
 
-## Expanding the ESLint configuration
+- 🔳 Fixed 1440×1024 layout (desktop-first)
+- 🎞️ Smooth entrance animations using **Framer Motion**
+- 🌀 Futuristic background and design elements
+- 👨‍💻 Google Font: `Orbitron` for tech-style typography
+- 🎨 Custom color theme (`#2f2f2f` base)
+- 🧠 No external UI kits (ShadCN removed)
+- ⚡ Fast Vite + Tailwind v4 setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### 📸 Preview
+
+![screenshot](./src/assets/futuristic-bg.png)
+
+---
+
+### 🛠 Tech Stack
+
+| Tool | Description |
+|------|-------------|
+| **React** | UI framework |
+| **Vite** | Lightning-fast dev server |
+| **Tailwind CSS v4** | Utility-first styling |
+| **Framer Motion** | Component-level animation |
+| **Lucide React** | Icons (e.g., `ArrowRight`) |
+
+---
+
+### 🖋️ Font
+
+- **Font Used:** [`Orbitron`](https://fonts.google.com/specimen/Orbitron)
+- **Why?** Bold, futuristic, ideal for tech products.
+- **How it’s loaded:**
+```html
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+
+📁 Folder Structure
+Futuristic-Tech-Website/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   └── FuturisticLanding.jsx
+│   ├── index.css
+│   └── main.jsx
+├── public/
+└── index.html
+
+
+📦 Installation
+# Clone the repo
+git clone https://github.com/your-username/Futuristic-Tech-Website.git
+cd Futuristic-Tech-Website
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
