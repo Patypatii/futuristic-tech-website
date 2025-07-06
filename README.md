@@ -64,3 +64,14 @@ npm install
 
 # Run development server
 npm run dev
+
+
+---
+
+### 🌟 Give a Star
+
+If you like this project, **please consider giving it a star** on GitHub — it helps others discover it and keeps me motivated! 😊
+
+[⭐ Star this repo](https://github.com/your-username/Futuristic-Tech-Website)
+
+
