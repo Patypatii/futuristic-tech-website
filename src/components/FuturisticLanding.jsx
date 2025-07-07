@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import futuristicBg from "../assets/background-video.mp4";
 import pinkLogo from "../assets/3D pixels-pink.svg";
+import { TypeAnimation } from 'react-type-animation';
+
 
 export default function FuturisticLanding() {
     const navItems = [
@@ -17,7 +19,7 @@ export default function FuturisticLanding() {
         <div className="bg-[#2f2f2f] w-full min-h-screen flex justify-center items-center overflow-hidden">
             <div className="relative w-[1920px] h-[900px] flex justify-center items-start p-6">
                 {/* Background Video Container */}
-                <div className="absolute left-1/2 top-0 -translate-x-1/2 mt-[22px] w-[1820px] h-[880px] z-10 overflow-clip">
+                <div className="absolute left-1/2 top-0 -translate-x-1/2 rounded-3xl mt-[22px] w-[1820px] h-[880px] z-10 overflow-clip">
                     <video
                         autoPlay
                         loop
@@ -33,18 +35,31 @@ export default function FuturisticLanding() {
                     {/* Top Left Heading */}
                     <motion.div
                         className="absolute top-[37px] left-[-160px] text-white"
-                        initial={{ opacity: 0, x: -40 }}
+                        initial={{ opacity: 0, x: -80 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5 }}
+                        transition={{ duration: 1.5 }}
                     >
-                        <div className="text-[34px] font-normal leading-none">
-                            ELEVATE YOUR
-                        </div>
+                        <TypeAnimation
+                            sequence={[
+                                'ELEVATE YOUR BRAND',
+                                1500,
+                                'AMPLIFY YOUR PRESENCE',
+                                1500,
+                                'UNLEASH YOUR CREATIVITY',
+                                1500,
+                                'SHAPE YOUR FUTURE',
+                                1500,
+                                'IGNITE YOUR IDENTITY',
+                                1500,]}
+                            wrapper="div"
+                            speed={10}
+                            repeat={Infinity}
+                            className="text-[34px] font-normal leading-none"
+                        />
                         <div className="text-[22px] mt-2 font-normal leading-none">
-                            SOUND EXPERIENCE
+                            By CGI Product Animations And Websites
                         </div>
                     </motion.div>
-
                     {/* Pre-order Button */}
                     <motion.button
                         className="absolute top-[0px] right-[-168px] w-[259px] h-[50px] border-2 border-white text-white text-[22px] rounded-[20px] hover:bg-white hover:text-[#58f4ff] cursor-pointer transition-colors flex items-center justify-center gap-2"
@@ -57,7 +72,7 @@ export default function FuturisticLanding() {
 
                     {/* Feature Cards */}
                     <motion.div
-                        className="absolute top-[290px] right-[-168px] w-[280px] h-[200px] bg-[#2f2f2fb2] text-white rounded-[20px] p-6 z-10"
+                        className="absolute  flex flex-col top-[290px] right-[-168px] w-[280px] h-[200px] bg-[#2f2f2fb2] text-white rounded-[20px] p-6 z-10 items-center justify-start"
                         initial={{ opacity: 0, x: 60 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.3 }}
@@ -71,12 +86,12 @@ export default function FuturisticLanding() {
                     </motion.div>
 
                     <motion.div
-                        className="absolute top-[520px] right-[-168px] w-[280px] h-[200px] bg-[#2f2f2fb2] text-white rounded-[20px] p-6 z-10 items-center justify-center"
+                        className="absolute top-[520px] right-[-168px] w-[280px] h-[200px] flex flex-col bg-[#2f2f2fb2] text-white rounded-[20px] p-6 z-10 items-center justify-start"
                         initial={{ opacity: 0, x: 60 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.5 }}
                     >
-                        <h3 className="text-[18px] font-bold whitespace-pre-line mb-3">
+                        <h3 className="text-[18px] font-bold whitespace-pre-line mb-3 mt-5">
                             FUTURISTIC DESIGN
                         </h3>
                         <p className="text-[12px] whitespace-pre-line leading-tight">
@@ -85,18 +100,26 @@ export default function FuturisticLanding() {
                     </motion.div>
 
                     {/* Bottom Brand Text */}
-                    <div className="absolute top-[748px] left-[-160px] text-white text-lg z-10">
+                    <motion.div className="absolute top-[748px] left-[-160px] text-white text-lg z-10"
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 1 }}
+                    >
                         QUANTUM AUDIO
-                    </div>
+                    </motion.div>
 
                     {/* Bottom Tagline */}
-                    <div className="absolute top-[820px] left-[-210px] text-white text-lg z-10 leading-tight">
+                    <motion.div
+                        initial={{ opacity: 0, y: 60 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 1.2 }}
+                        className="absolute top-[820px] left-[-160px] text-white text-lg z-10 leading-tight">
                         UNMATCHED <br />
                         SOUND QUALITY
-                    </div>
+                    </motion.div>
 
                     {/* Logo */}
-                    <div className="absolute top-[820px] left-[0px] w-10 h-10 border border-white rounded-full flex items-center justify-center z-10">
+                    <div className="absolute top-[820px] left-[80px] w-10 h-10 border border-white rounded-full flex items-center justify-center z-10">
                         <img
                             src={pinkLogo}
                             alt="Logo"
@@ -122,7 +145,7 @@ export default function FuturisticLanding() {
                             ) : (
                                 <div
                                     key={i}
-                                    className="text-white text-lg font-normal"
+                                    className="text-white text-lg font-normal mx-5"
                                 >
                                     {item.label}
                                 </div>
