@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import futuristicBg from "../assets/background-video.mp4";
-import pinkLogo from "../assets/3D pixels-pink.svg";
+import pinkLogo from "../assets/3d-Pixels-pink.svg";
 import { TypeAnimation } from 'react-type-animation';
 
 
