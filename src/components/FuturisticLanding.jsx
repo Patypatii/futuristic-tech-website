@@ -130,9 +130,9 @@ export default function FuturisticLanding() {
                     {/* Navigation */}
                     <motion.div
                         className="absolute top-[748px] left-1/2 -translate-x-1/2 flex gap-20 z-10"
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.6 }}
+                        transition={{ delay: 1 }}
                     >
                         {navItems.map((item, i) =>
                             item.isButton ? (
