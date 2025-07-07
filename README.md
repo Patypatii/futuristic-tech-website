@@ -6,12 +6,12 @@ A **pixel-perfect**, modern, and animated landing page built with **React**, **T
 
 ### ✨ Features
 
-- 🔳 Fixed 1440×1024 layout (desktop-first)
+- 🔳 Fixed layout (desktop-first)
 - 🎞️ Smooth entrance animations using **Framer Motion**
 - 🌀 Futuristic background and design elements
 - 👨‍💻 Google Font: `Orbitron` for tech-style typography
 - 🎨 Custom color theme (`#2f2f2f` base)
-- 🧠 No external UI kits (ShadCN removed)
+- 🧠 No external UI kits
 - ⚡ Fast Vite + Tailwind v4 setup
 
 ---
@@ -56,7 +56,7 @@ Futuristic-Tech-Website/
 
 📦 Installation
 # Clone the repo
-git clone https://github.com/your-username/Futuristic-Tech-Website.git
+git clone https://github.com/Patypatii/Futuristic-Tech-Website.git
 cd Futuristic-Tech-Website
 
 # Install dependencies
